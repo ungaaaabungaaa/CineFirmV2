@@ -59,9 +59,9 @@
 
 .slide
 {
-  width: 32vw; /* 50% of the viewport width */
-  height: 32vw; /* Keep the height equal to the width to maintain the square aspect ratio */
-  background: gray;
+  width: 30vw; /* 50% of the viewport width */
+  height: 30vw; /* Keep the height equal to the width to maintain the square aspect ratio */
+  background: transparent;
   transition: transform 0.3s ease; /* Smooth transition over 0.3 seconds */
 }
 
@@ -97,7 +97,7 @@
   left: -2vw; /* Adjusted to 2% of the viewport width */
   width: 4vw; /* Width based on 4% of the viewport width */
   height: 4vw; /* Height same as width to maintain the circle aspect ratio */
-  background-color: black;
+  background-color: transparent;
   border: 0.2vw white solid; /* Border size is also made responsive */
   border-radius: 50%; /* 100% to 50% for more common circular definition */
 }

@@ -32,8 +32,8 @@
 .card
 {
     position: absolute;
-    width: 190px;
-    height: 250px;
+    width: 290px;
+    height: 190px;
     border-radius: 1.2rem;
     overflow: hidden;
 }

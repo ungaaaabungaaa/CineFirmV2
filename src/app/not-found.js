@@ -1,6 +1,7 @@
 "use client";
 
 import '../app/not-found.css';
+import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
@@ -33,7 +34,7 @@ export default function NotFound() {
                 pin: true,
                 onUpdate: (self) => {
                     gsap.to(".wrapper-404", {
-                        x: `${-6500 * self.progress}px`,
+                        x: `${-7000 * self.progress}px`,
                         duration: 0.5,
                         ease: "power3.out",
                     });
@@ -82,6 +83,8 @@ export default function NotFound() {
                 <h1>This Page Does Not Exist.....but that's Okay
                     <br />
                     we'll Get You Right Back On Track!
+                    <br></br>
+                    <Link href="/">Let's Go Home</Link>
                 </h1>
             </section>
         </div>
