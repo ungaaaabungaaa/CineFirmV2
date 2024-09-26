@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react';
 import Lottie from 'lottie-react';
-import animationData from '../portfolio/Loading'; // Or wherever your JSON file is
+import animationData from '../portfolio/loading.json'; // Or wherever your JSON file is
 
 const Loading = () => {
   const [isClient, setIsClient] = useState(false);
