@@ -108,7 +108,7 @@ export default function AboutPage() {
           <div className="slider-wrapper" ref={sliderWrapperRef}>
             {[Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10].map((imgSrc, idx) => (
               <div className="slide" key={idx}>
-                <Image className="Image" src={imgSrc} alt={`Slide ${idx + 1}`} />
+                <Image  className="Image" src={imgSrc} alt={`Slide ${idx + 1}`} />
               </div>
             ))}
           </div>

@@ -10,6 +10,7 @@ import Image2 from '../app/about/images/7.webp';
 import Image5 from '../app/about/images/5.webp';
 import Image6 from '../app/about/images/6.webp';
 import Image10 from '../app/about/images/1.webp';
+import Spline from '@splinetool/react-spline';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -63,6 +64,7 @@ export default function NotFound() {
     }, []);
 
     return (
+        <>
         <div className="container" ref={wrapperRef}>
             <section className="wrapper-404">
                 <h1 className="h1_404">404 Page Not Found</h1>
@@ -88,5 +90,17 @@ export default function NotFound() {
                 </h1>
             </section>
         </div>
+        <div className="background-spline">
+            <Spline
+                scene="https://prod.spline.design/9tOboOaPbjCN6WgL/scene.splinecode" 
+            />
+        </div>
+        <div className="background-spline-2">
+            <Spline
+               scene="https://prod.spline.design/NDhYt0ylqSXzInrA/scene.splinecode" 
+            />
+        </div>
+
+        </>
     );
 }

@@ -82,3 +82,29 @@
     font-weight: lighter;
     text-align: center;
 }
+
+
+.background-spline {
+    position: fixed;
+    top:  60%;
+    left: 5%;
+    transform: translate(-50%, -50%) rotate(27deg); /* Rotates and centers the Spline */
+    z-index: -1; /* Ensures it's behind other content */
+    pointer-events: none; /* Prevents it from interacting with clicks */
+    width: 120vw; /* Ensures it covers half inside and half outside the screen */
+    height: auto;
+}
+
+
+
+.background-spline-2 {
+    position: fixed;
+    top:  5%;
+    left: 80%;
+    transform: translate(-50%, -50%) rotate(227deg); /* Rotates and centers the Spline */
+    z-index: -1; /* Ensures it's behind other content */
+    pointer-events: none; /* Prevents it from interacting with clicks */
+    width: 45vw; /* Ensures it covers half inside and half outside the screen */
+    height: 45vw;
+}
+
