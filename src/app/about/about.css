@@ -1,0 +1,114 @@
+.background-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.background-title
+{
+  margin-top: 3.2vh;
+  margin-left: 15.2vw;
+}
+
+
+
+.spline-background {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  z-index: 2;
+}
+
+.slider
+{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-wrapper 
+{  
+  width: max-content;
+  padding: 0 10vw; /* Padding based on 10% of the viewport width */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5vw; /* Gap based on 5% of the viewport width */
+
+}
+
+.slide
+{
+  width: 32vw; /* 50% of the viewport width */
+  height: 32vw; /* Keep the height equal to the width to maintain the square aspect ratio */
+  background: gray;
+  transition: transform 0.3s ease; /* Smooth transition over 0.3 seconds */
+}
+
+.Image
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.marker-wrapper
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: max-content;
+    height: 100vh;
+}
+
+.marker
+{
+  position: relative;
+  width: 0.2vw; /* Width is now based on viewport width for responsiveness */
+  height: 100%; /* Height remains 100% relative to the parent element */
+  background: white;
+}
+
+.marker::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 5vh; /* Adjusted to 5% of the viewport height for responsiveness */
+  left: -2vw; /* Adjusted to 2% of the viewport width */
+  width: 4vw; /* Width based on 4% of the viewport width */
+  height: 4vw; /* Height same as width to maintain the circle aspect ratio */
+  background-color: black;
+  border: 0.2vw white solid; /* Border size is also made responsive */
+  border-radius: 50%; /* 100% to 50% for more common circular definition */
+}
+
+.active-slide {
+  position: absolute;
+  top: 7.5vh; /* Top adjusted to 6% of the viewport height */
+  left: 4vw; /* Left adjusted to 4% of the viewport width */
+  color: white;
+  font-size: 1.5vw; /* Font size is now responsive based on viewport width */
+}
+.slide:hover {
+  transform: scale(1.1);
+}

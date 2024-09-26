@@ -1,0 +1,23 @@
+.terms_layout
+{
+    width: 100vw;
+    height: auto;
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.spline_container {
+    width: 75vw;  /* Set to 45% of the parent width */
+    height: auto;  /* Optional, lets the height adjust automatically */
+}
+
+.spline_container canvas {
+    width: 100%;  /* Ensure the canvas inside Spline scales properly */
+    height: auto;
+}
+
